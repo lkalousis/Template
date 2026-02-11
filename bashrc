@@ -1,4 +1,7 @@
 
+# Should be saved as .bashrc
+#
+
 # ROOT/CERN
 #
 export ROOTSYS=/Users/kalousis/root/builddir/
