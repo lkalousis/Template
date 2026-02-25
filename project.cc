@@ -73,13 +73,15 @@ Int_t project()
   
   //c1->Update();
   //c1->WaitPrimitive();
-  /*
+  
   ifstream input; 
   string sline; 
   istringstream iss;
   
   input.open( "file.txt", ios::in );
-  
+
+  ofstream output( "file2.txt" );
+      
   while ( getline( input, sline ) ) 
     {
       iss.str( sline );
@@ -89,16 +91,17 @@ Int_t project()
       Float_t chi2;
       
       iss >> gamma >> phi >> chi2;
-      cout << gamma << ", " << phi << ", " << chi2 << endl;
-      getchar();
-      
+      //cout << gamma << ", " << phi << ", " << chi2 << endl;
+      //getchar();
+
+      output << setw(10) << Form( "%.3f", gamma ) << setw(10) << Form( "%.3f", phi ) << setw(10) << Form( "%.3f", chi2 ) << endl;
       iss.clear();
       
     }
   
   input.clear();
   input.close();
-  */
+  
 
   
   cout << "" << endl;
