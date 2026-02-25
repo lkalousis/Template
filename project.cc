@@ -79,7 +79,6 @@ Int_t project()
   istringstream iss;
   
   input.open( "file.txt", ios::in );
-
   ofstream output( "file2.txt" );
       
   while ( getline( input, sline ) ) 
