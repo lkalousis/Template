@@ -4,6 +4,9 @@
 #include "iostream"
 #include "iomanip"
 
+#include "fstream"
+#include "sstream"
+
 #include "TROOT.h"
 #include "TStyle.h"
 #include "TColor.h"
@@ -67,10 +70,37 @@ Int_t project()
   //TCanvas *c1 = new TCanvas( "c1", "" );
   //c1->cd();
   //c1->SetLogy();
-    
+  
   //c1->Update();
   //c1->WaitPrimitive();
-    
+  /*
+  ifstream input; 
+  string sline; 
+  istringstream iss;
+  
+  input.open( "file.txt", ios::in );
+  
+  while ( getline( input, sline ) ) 
+    {
+      iss.str( sline );
+            
+      Float_t phi;
+      Float_t gamma;
+      Float_t chi2;
+      
+      iss >> gamma >> phi >> chi2;
+      cout << gamma << ", " << phi << ", " << chi2 << endl;
+      getchar();
+      
+      iss.clear();
+      
+    }
+  
+  input.clear();
+  input.close();
+  */
+
+  
   cout << "" << endl;
   cout << "" << endl;
    
