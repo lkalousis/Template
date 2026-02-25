@@ -73,7 +73,7 @@ Int_t project()
   
   //c1->Update();
   //c1->WaitPrimitive();
-  
+  /*
   ifstream input; 
   string sline; 
   istringstream iss;
@@ -101,7 +101,7 @@ Int_t project()
   
   input.clear();
   input.close();
-  
+  */
 
   
   cout << "" << endl;
