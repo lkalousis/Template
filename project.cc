@@ -67,7 +67,14 @@ Int_t project()
   gStyle->SetNumberContours( NCont );
 
   gROOT->ForceStyle();
-    
+
+  //TCanvas *c1 = new TCanvas( "c1", "" );
+  //c1->cd();
+  //c1->SetLogy();
+
+  //c1->Update();
+  //c1->WaitPrimitive();
+  
   
   cout << "" << endl;
   cout << "" << endl;
@@ -98,13 +105,6 @@ int main()//int argc, char *argv[] )
   project();
 
 }
-
-//TCanvas *c1 = new TCanvas( "c1", "" );
-//c1->cd();
-//c1->SetLogy();
-
-//c1->Update();
-//c1->WaitPrimitive();
 
 //TFile *f = new TFile( "output.root", "RECREATE" );
 //Form( "out/%s-Events.root", name.c_str() ) // string name;
