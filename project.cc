@@ -54,7 +54,7 @@ Int_t project()
   gStyle->SetOptStat( 1110 ); 
   gStyle->SetOptFit( 0 ); 
   
-  gStyle->SetPalette( 1 );
+  gStyle->SetPalette( 1 ); // Standard
   //gStyle->SetPalette( 51, 0 ); // DeepSea
   //gStyle->SetPalette( 53, 0 ); // Black body
   
