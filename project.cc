@@ -101,7 +101,16 @@ Int_t project()
   input.clear();
   input.close();
   */
-
+  /*
+  TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
+  leg->SetTextFont( 22 );
+  leg->SetBorderSize( 0 );
+  leg->AddEntry( h1, "Data", "PE" );
+  leg->AddEntry( h2, "Background", "L" );
+  leg->AddEntry( h3, "Best Fit", "LF" );
+  leg->SetFillColor( 0 ); 
+  leg->Draw();
+  */
   
   cout << "" << endl;
   cout << "" << endl;
