@@ -4,8 +4,8 @@
 #include "iostream"
 #include "iomanip"
 
-#include "fstream"
-#include "sstream"
+//#include "fstream"
+//#include "sstream"
 
 #include "TROOT.h"
 #include "TStyle.h"
@@ -54,7 +54,8 @@ Int_t project()
   gStyle->SetOptStat( 1110 ); 
   gStyle->SetOptFit( 0 ); 
   
-  gStyle->SetPalette( 1 ); 
+  gStyle->SetPalette( 1 );
+  // gStyle->SetPalette( 51, 0 ); 
   
   const Int_t NRGBs = 5;
   const Int_t NCont = 255;
@@ -73,7 +74,10 @@ Int_t project()
   
   //c1->Update();
   //c1->WaitPrimitive();
-  
+
+  //TFile *f = new TFile( "output.root", "RECREATE" );
+  //Form( "out/%s-Events.root", arca.name.c_str() )
+    
   /*
   TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
   leg->SetTextFont( 22 );
