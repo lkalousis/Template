@@ -68,28 +68,6 @@ Int_t project()
 
   gROOT->ForceStyle();
     
-  //TCanvas *c1 = new TCanvas( "c1", "" );
-  //c1->cd();
-  //c1->SetLogy();
-  
-  //c1->Update();
-  //c1->WaitPrimitive();
-
-  //TFile *f = new TFile( "output.root", "RECREATE" );
-  //Form( "out/%s-Events.root", name.c_str() ) // string name;
-  //f->cd();
-  
-    
-  /*
-  TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
-  leg->SetTextFont( 22 );
-  leg->SetBorderSize( 0 );
-  leg->AddEntry( h1, "Data", "PE" );
-  leg->AddEntry( h2, "Background", "L" );
-  leg->AddEntry( h3, "Best Fit", "LF" );
-  leg->SetFillColor( 0 ); 
-  leg->Draw();
-  */
   
   cout << "" << endl;
   cout << "" << endl;
@@ -120,6 +98,31 @@ int main()//int argc, char *argv[] )
   project();
 
 }
+
+//TCanvas *c1 = new TCanvas( "c1", "" );
+//c1->cd();
+//c1->SetLogy();
+
+//c1->Update();
+//c1->WaitPrimitive();
+
+//TFile *f = new TFile( "output.root", "RECREATE" );
+//Form( "out/%s-Events.root", name.c_str() ) // string name;
+//f->cd();
+
+//TFile *f1 = new TFile( "input.root", "read" );
+//TTree *tr = (TTree*)f1->Get( "tr" );
+
+/*
+  TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
+  leg->SetTextFont( 22 );
+  leg->SetBorderSize( 0 );
+  leg->AddEntry( h1, "Data", "PE" );
+  leg->AddEntry( h2, "Background", "L" );
+  leg->AddEntry( h3, "Best Fit", "LF" );
+  leg->SetFillColor( 0 ); 
+  leg->Draw();
+*/
 
 /*
   ifstream input; 
