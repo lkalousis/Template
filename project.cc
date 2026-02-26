@@ -133,7 +133,9 @@ int main()//int argc, char *argv[] )
   Float_t branch1;      
   tr1->Branch( "branch1", &branch1, "branch1/F" ); or
   tr1->Branch( "branch1", &branch1 );
-  
+  tr1->Fill();
+  f->Write();
+  f->Close();
 */
   
   
