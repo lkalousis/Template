@@ -129,6 +129,15 @@ int main()//int argc, char *argv[] )
 */
 
 /*
+  TTree *tr1 = new TTree( "tr1", "" );
+  Float_t branch1;      
+  tr1->Branch( "branch1", &branch1, "branch1/F" ); or
+  tr1->Branch( "branch1", &branch1 );
+  
+*/
+  
+  
+/*
   TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
   leg->SetTextFont( 22 );
   leg->SetBorderSize( 0 );
