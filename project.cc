@@ -55,7 +55,8 @@ Int_t project()
   gStyle->SetOptFit( 0 ); 
   
   gStyle->SetPalette( 1 );
-  //gStyle->SetPalette( 51, 0 ); 
+  //gStyle->SetPalette( 51, 0 ); // DeepSea
+  //gStyle->SetPalette( 53, 0 ); // Black body
   
   const Int_t NRGBs = 5;
   const Int_t NCont = 255;
