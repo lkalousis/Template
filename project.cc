@@ -73,34 +73,7 @@ Int_t project()
   
   //c1->Update();
   //c1->WaitPrimitive();
-  /*
-  ifstream input; 
-  string sline; 
-  istringstream iss;
   
-  input.open( "file.txt", ios::in );
-  ofstream output( "file2.txt" );
-      
-  while ( getline( input, sline ) ) 
-    {
-      iss.str( sline );
-            
-      Float_t phi;
-      Float_t gamma;
-      Float_t chi2;
-      
-      iss >> gamma >> phi >> chi2;
-      //cout << gamma << ", " << phi << ", " << chi2 << endl;
-      //getchar();
-
-      output << setw(10) << Form( "%.3f", gamma ) << setw(10) << Form( "%.3f", phi ) << setw(10) << Form( "%.3f", chi2 ) << endl;
-      iss.clear();
-      
-    }
-  
-  input.clear();
-  input.close();
-  */
   /*
   TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
   leg->SetTextFont( 22 );
@@ -141,3 +114,32 @@ int main()//int argc, char *argv[] )
   project();
 
 }
+
+/*
+  ifstream input; 
+  string sline; 
+  istringstream iss;
+  
+  input.open( "file.txt", ios::in );
+  ofstream output( "file2.txt" );
+      
+  while ( getline( input, sline ) ) 
+    {
+      iss.str( sline );
+            
+      Float_t phi;
+      Float_t gamma;
+      Float_t chi2;
+      
+      iss >> gamma >> phi >> chi2;
+      //cout << gamma << ", " << phi << ", " << chi2 << endl;
+      //getchar();
+
+      output << setw(10) << Form( "%.3f", gamma ) << setw(10) << Form( "%.3f", phi ) << setw(10) << Form( "%.3f", chi2 ) << endl;
+      iss.clear();
+      
+    }
+  
+  input.clear();
+  input.close();
+  */
