@@ -76,7 +76,9 @@ Int_t project()
   //c1->WaitPrimitive();
 
   //TFile *f = new TFile( "output.root", "RECREATE" );
-  //Form( "out/%s-Events.root", arca.name.c_str() )
+  //Form( "out/%s-Events.root", name.c_str() ) // string name;
+  //f->cd();
+  
     
   /*
   TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
