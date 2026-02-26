@@ -114,6 +114,21 @@ int main()//int argc, char *argv[] )
 //TTree *tr = (TTree*)f1->Get( "tr" );
 
 /*
+  Float_t branch;
+  tr->SetBranchStatus( "*", 0 ); 
+  tr->SetBranchStatus( "branch", 1 );
+  tr->SetBranchAddress( "branch", &branch );
+
+  Int_t ntot = tr->GetEntries();
+  for ( Int_t i=0; i<ntot; i++ )
+  {
+  tr->GetEntry( i );
+  cout << branch << endl;
+  }
+		  
+*/
+
+/*
   TLegend *leg = new TLegend( 0.55, 0.67, 0.85, 0.85 );
   leg->SetTextFont( 22 );
   leg->SetBorderSize( 0 );
@@ -149,6 +164,6 @@ int main()//int argc, char *argv[] )
       
     }
   
-  input.clear();
+    input.clear();
   input.close();
-  */
+*/
